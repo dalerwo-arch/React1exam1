@@ -1,247 +1,283 @@
-.q2 {
-    position: absolute;
-    left: 52%;
-    z-index: -0;
-    top: 390px;
-    width: 250px;
-    height: 250px;
-}
+ * {
+     box-sizing: border-box;
+ }
 
-.q1 {
-    position: absolute;
-    left: 78%;
-    z-index: -0;
-    top: 230px;
-    width: 150px;
-    height: 150px;
-}
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     overflow-x: hidden;
+ }
 
+ #root {
+     width: 100%;
+     overflow-x: hidden;
+ }
 
-.section4 {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 25px 22px 50px;
-    box-sizing: border-box;
-    position: relative;
-}
+ .section4 {
+     width: 100%;
+     max-width: 1400px;
+     margin: 0 auto;
+     padding: 25px 22px 50px;
+     position: relative;
+     color: #3d3936;
+     overflow: hidden;
+ }
 
-.q1 {
-    position: absolute;
-    left: 78%;
-    top: 230px;
-    width: 150px;
-    height: 150px;
-    z-index: 0;
-    pointer-events: none;
-}
+ .q1 {
+     position: absolute;
+     left: 78%;
+     top: 230px;
+     width: 150px;
+     height: 150px;
+     z-index: 0;
+     pointer-events: none;
+ }
 
-.q2 {
-    position: absolute;
-    left: 52%;
-    top: 390px;
-    width: 250px;
-    height: 250px;
-    z-index: 0;
-    pointer-events: none;
-}
+ .q2 {
+     position: absolute;
+     left: 52%;
+     top: 390px;
+     width: 250px;
+     height: 250px;
+     z-index: 0;
+     pointer-events: none;
+ }
 
-.faq,
-.consultation,
-.trial {
-    position: relative;
-    z-index: 1;
-}
+ .trial {
+     position: relative;
+     z-index: 1;
+     padding-top: 5px;
+     padding-bottom: 85px;
+ }
 
-.faq h2 {
-    margin: 0 0 18px;
-    font-size: 22px;
-    font-weight: 500;
-}
+ .trial h2 {
+     margin: 0 0 32px;
+     font-size: 28px;
+     line-height: 1.2;
+     font-weight: 500;
+     color: #161616;
+ }
 
-.faq-tabs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 14px;
-}
+ .trial p {
+     margin: 0 0 8px;
+     color: #77716c;
+     font-size: 10px;
+     line-height: 1.6;
+ }
 
-.faq-tabs button {
-    border: 1px solid #e7dfd7;
-    background: transparent;
-    border-radius: 20px;
-    padding: 7px 13px;
-    font-size: 11px;
-    color: #4b4540;
-    cursor: pointer;
-}
+ .trial button {
+     margin-top: 18px;
+     border: none;
+     outline: none;
+     background: #4f967d;
+     color: white;
+     border-radius: 25px;
+     padding: 13px 28px;
+     font-size: 10px;
+     cursor: pointer;
+     transition: 0.2s;
+ }
 
-.faq-tabs .active {
-    background: #e7d8c7;
-    border-color: #e7d8c7;
-}
+ .trial button:hover {
+     background: #43866f;
+ }
 
-.faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+ .newsletter {
+     width: 100%;
+     min-height: 92px;
+     padding: 17px 18px;
+     border-radius: 17px;
+     background: #bd9b88;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 30px;
+     position: relative;
+     z-index: 1;
+ }
 
-.faq-item {
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-}
+ .newsletter-left {
+     flex: 1;
+     min-width: 0;
+ }
 
-.faq-question {
-    width: 100%;
-    border: none;
-    background: transparent;
-    padding: 15px 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: 600;
-    color: #282522;
-}
+ .newsletter-left h2 {
+     margin: 0 0 10px;
+     color: white;
+     font-size: 26px;
+     line-height: 1;
+     font-weight: 500;
+ }
 
-.arrow {
-    font-size: 21px;
-    line-height: 12px;
-}
+ .newsletter-info {
+     display: flex;
+     align-items: center;
+     gap: 9px;
+ }
 
-.faq-answer {
-    padding: 0 18px 15px;
-    color: #77716c;
-    font-size: 9px;
-    line-height: 1.5;
-}
+ .mail-icon {
+     color: white;
+     font-size: 17px;
+     line-height: 1;
+     flex-shrink: 0;
+ }
 
-.consultation {
-    margin-top: 45px;
-    min-height: 172px;
-    border-radius: 13px;
-    overflow: hidden;
-    background: #a8c49c;
-    display: flex;
-}
+ .newsletter-info p {
+     margin: 0;
+     color: white;
+     font-size: 9px;
+     line-height: 1.4;
+ }
 
-.consultation-content {
-    flex: 1;
-    padding: 14px;
-    position: relative;
-}
+ .subscribe-form {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     flex-shrink: 0;
+ }
 
-.consultation-content h2 {
-    margin: 0 0 18px;
-    color: white;
-    font-size: 20px;
-    line-height: 1.25;
-    font-weight: 400;
-}
+ .subscribe-form input {
+     width: 205px;
+     height: 29px;
+     border: none;
+     outline: none;
+     border-radius: 20px;
+     padding: 0 15px;
+     background: #fff;
+     color: #555;
+     font-size: 9px;
+ }
 
-.consultation-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-    max-width: 310px;
-}
+ .subscribe-form input::placeholder {
+     color: #999;
+ }
 
-.consultation-form input {
-    width: 127px;
-    height: 21px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    padding: 0 10px;
-    box-sizing: border-box;
-    background: #f9f7f4;
-    font-size: 7px;
-}
+ .subscribe-form button {
+     height: 30px;
+     padding: 0 23px;
+     border: none;
+     outline: none;
+     border-radius: 20px;
+     background: #4f967d;
+     color: white;
+     font-size: 9px;
+     cursor: pointer;
+     white-space: nowrap;
+ }
 
-.consultation-form button {
-    width: 127px;
-    height: 21px;
-    border: none;
-    border-radius: 20px;
-    background: #4f967d;
-    color: white;
-    font-size: 7px;
-    cursor: pointer;
-}
+ .subscribe-form button:hover {
+     background: #43866f;
+ }
 
-.doctor-info {
-    position: absolute;
-    bottom: 12px;
-    right: 15px;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    color: white;
-}
+ .footer {
+     padding-top: 45px;
+     position: relative;
+     z-index: 1;
+ }
 
-.doctor-icon {
-    width: 19px;
-    height: 19px;
-    border: 1px solid white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ .footer-top {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 30px;
+ }
 
-.doctor-info span,
-.doctor-info small {
-    display: block;
-}
+ .footer-phone h3 {
+     margin: 0 0 4px;
+     font-size: 14px;
+     font-weight: 700;
+     color: #494440;
+ }
 
-.doctor-info span,
-.doctor-info small {
-    font-size: 7px;
-}
+ .footer-phone p {
+     margin: 0;
+     font-size: 8px;
+     color: #77716c;
+ }
 
-.consultation-image {
-    width: 43%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
+ .footer-email h3 {
+     margin: 0;
+     font-size: 14px;
+     font-weight: 700;
+     color: #494440;
+ }
 
-.consultation-image img {
-    width: 190px;
-    height: 215px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 22px 22px 0 0;
-    margin-right: 25px;
-    margin-top: 15px;
-}
+ .socials {
+     display: flex;
+     align-items: center;
+     gap: 17px;
+ }
 
-.trial {
-    padding-top: 32px;
-}
+ .socials a {
+     width: 28px;
+     height: 28px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     background: #4f967d;
+     color: white;
+     text-decoration: none;
+     font-size: 14px;
+     flex-shrink: 0;
+ }
 
-.trial h2 {
-    margin: 0 0 22px;
-    font-size: 21px;
-    font-weight: 500;
-}
+ .address {
+     margin-top: 28px;
+     color: #77716c;
+     font-size: 9px;
+     line-height: 1.5;
+ }
 
-.trial p {
-    margin: 0 0 18px;
-    color: #77716c;
-    font-size: 8px;
-    line-height: 1.7;
-}
+ .copyright {
+     margin-top: 19px;
+     color: #77716c;
+     font-size: 9px;
+ }
 
-.trial button {
-    border: none;
-    background: #4f967d;
-    color: white;
-    border-radius: 20px;
-    padding: 8px 20px;
-    font-size: 8px;
-    cursor: pointer;
-}
+ .footer-bottom {
+     margin-top: 8px;
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-between;
+     gap: 20px;
+ }
+
+ .policy {
+     max-width: 650px;
+ }
+
+ .policy p {
+     margin: 3px 0;
+     color: #77716c;
+     font-size: 7px;
+     line-height: 1.5;
+ }
+
+ .policy span {
+     color: #4f967d;
+ }
+
+ .payments {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     flex-shrink: 0;
+ }
+
+ .payments div {
+     min-width: 34px;
+     height: 20px;
+     padding: 0 4px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 3px;
+     background: #555;
+     color: white;
+     font-size: 8px;
+     font-weight: 700;
+ }
